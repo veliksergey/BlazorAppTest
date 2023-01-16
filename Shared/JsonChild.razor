@@ -1,0 +1,28 @@
+
+@foreach (var node in Nodes)
+{ 
+  <div>
+    @node.name
+    <br/>
+    @if (node.children != null && node.children.Count > 0)
+    {
+        <JsonChild Nodes="node.children"></JsonChild>
+        <br/>
+    }
+  </div>
+  <hr/>
+}
+
+@code {
+  [Parameter]
+  public List<Node> Nodes { get; set; } = default!;
+
+  protected override void OnInitialized()
+  {
+    Console.WriteLine(Nodes.Count);
+    Console.WriteLine(Nodes);
+  }
+  
+  
+
+}

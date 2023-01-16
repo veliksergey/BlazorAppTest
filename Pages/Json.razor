@@ -1,0 +1,23 @@
+@page "/json"
+@using System.Text.Json
+<h3>JSON</h3>
+
+<pre>@Nodes</pre>
+
+<JsonChild Nodes="Nodes"></JsonChild>
+
+@code {
+  
+
+  public List<Node> Nodes = default!;
+  
+  protected override void OnInitialized()
+  {
+    string text = File.ReadAllText(@"./wwwroot/tree.json");
+    var jj = JsonSerializer.Deserialize<List<Node>>(text);
+    Nodes = jj[0].children;
+
+    Console.WriteLine(Nodes[0].name);
+  }
+
+}

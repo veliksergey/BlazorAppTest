@@ -1,0 +1,786 @@
+[
+  {
+    "name": "Blue Platform",
+    "status": "Online",
+    "children": [
+      {
+        "name": "Finance",
+        "type": "Domain",
+
+        "children": [
+          {
+            "name": "Accounts Payable",
+            "children": [
+              {
+                "name": "Finance Reconciliation"
+              }
+            ]
+          },
+          {
+            "name": "Accounts Receivable"
+          }
+        ]
+      },
+      {
+        "name": "Procurement & Asset Management",
+        "children": [
+          {
+            "name": "Purchasing",
+            "type": "Domain",
+            "children": [
+              {
+                "name": "Vendor"
+              },
+              {
+                "name": "Vendor Quote"
+              },
+              {
+                "name": "Purchase Order"
+              },
+              {
+                "name": "Request For Purchase"
+              }
+            ]
+          },
+          {
+            "name": "Repair",
+            "type": "Domain",
+            "children": [
+              {
+                "name": "Shop"
+              },
+              {
+                "name": "Repair Quote"
+              },
+              {
+                "name": "Repair Order"
+              }
+            ]
+          },
+          {
+            "name": "Engine Leasing"
+          }
+        ]
+      },
+      {
+        "name": "Manufactoring",
+        "type": "Domain",
+        "children": [
+          {
+            "name": "NA"
+          }
+        ]
+      },
+      {
+        "name": "Product & Inventory",
+        "type": "Domain",
+        "children": [
+          {
+            "name": "Part Number (Part Number)",
+            "value": 1732
+          },
+          {
+            "name": "Stockline",
+            "value": 3623
+          },
+          {
+            "name": "Stockline Level",
+            "value": 3623
+          },
+          {
+            "name": "Stockline Attribute",
+            "value": 10066
+          },
+          {
+            "name": "Price Management",
+            "value": 10066
+          },
+          {
+            "name": "Inventory",
+            "children": [
+              {
+                "name": "All Inventory (BLENDER)"
+              },
+              {
+                "name": "Our Inventory (BINDER)"
+              },
+              {
+                "name": "Operations (BOPS)"
+              }
+            ]
+          },
+          {
+            "name": "Manufactoring",
+            "value": 10066
+          },
+          {
+            "name": "Status",
+            "value": 10066
+          }
+        ]
+      },
+      {
+        "name": "Sales & Order Management",
+        "type": "Domain",
+        "children": [
+          {
+            "name": "Customer"
+          },
+          {
+            "name": "Customer Quote (BQUOTE)",
+            "children": []
+          },
+          {
+            "name": "Purchase Order",
+            "value": 3331
+          },
+          {
+            "name": "BALE - Sales Order",
+            "description": "General Sales API",
+            "platformVersion": "v1",
+            "version": "1.0.0",
+            "endpoint": "https://bale-dev.dasi.com",
+            "link": "https://bale-test.dasi.com/swagger/index.html",
+            "apiRepo": "https://dev.azure.com/diversifiedaeroservicesinc/Blogic-Sales/_git/Blogic-Sales-Api",
+            "dbRepo": "DB-DASI/BALE",
+            "status": "Online",
+            "dependency": [],
+            "children": [
+              {
+                "name": "BB-Sales"
+              },
+              {
+                "name": "Webstore"
+              }
+            ]
+          },
+          {
+            "name": "Exchange",
+            "value": 772
+          },
+          {
+            "name": "Returns and RMAs",
+            "value": 772
+          },
+          {
+            "name": "Webstore",
+            "value": 772
+          }
+        ]
+      },
+      {
+        "name": "Warehouse",
+        "type": "Domain",
+        "children": [
+          {
+            "name": "Warehouse",
+            "value": 8833
+          },
+          {
+            "name": "Shipping",
+            "value": 1732
+          },
+          {
+            "name": "Receiving",
+            "value": 3623
+          },
+          {
+            "name": "Inspection",
+            "value": 10066
+          },
+          {
+            "name": "Quality",
+            "value": 10066
+          },
+          {
+            "name": "Location",
+            "value": 10066
+          }
+        ]
+      },
+      {
+        "name": "Supply Chain Management",
+        "type": "Domain",
+        "children": [
+          {
+            "name": "NA"
+          }
+        ]
+      },
+      {
+        "name": "CRM",
+        "type": "Domain",
+        "description": "Price Catalog",
+        "platformVersion": "",
+        "version": "1.0.0",
+        "endpoint": "https://bcrm-dev.dasi.com",
+        "link": "https://bcrm-test.dasi.com/swagger/index.html",
+        "apiRepo": "https://dev.azure.com/diversifiedaeroservicesinc/BCRM/_git/BCRM-Api",
+        "dbRepo": "DB-DASI/BCRM",
+        "status": "Online",
+        "dependency": [],
+        "children": [
+          {
+            "name": "Account (Company)",
+            "description": "BCRM - Comapny",
+            "platformVersion": "",
+            "version": "1.0.0",
+            "endpoint": "https://bcrm-dev.dasi.com",
+            "link": "https://bcrm-test.dasi.com/swagger/index.html",
+            "apiRepo": "https://dev.azure.com/diversifiedaeroservicesinc/BCRM/_git/BCRM-Api",
+            "dbRepo": "DB-DASI/BCRM",
+            "status": "Online",
+            "dependency": [],
+            "children": [
+              {
+                "name": "Company Site",
+                "description": "BCRM - Comapny",
+                "platformVersion": "",
+                "version": "1.0.0",
+                "endpoint": "https://bcrm-dev.dasi.com",
+                "link": "https://bcrm-test.dasi.com/swagger/index.html",
+                "apiRepo": "https://dev.azure.com/diversifiedaeroservicesinc/BCRM/_git/BCRM-Api",
+                "dbRepo": "DB-DASI/BCRM",
+                "status": "Online",
+                "dependency": []
+              },
+              {
+                "name": "Company Type",
+                "description": "BCRM - Comapny Type",
+                "platformVersion": "",
+                "version": "1.0.0",
+                "endpoint": "https://bcrm-dev.dasi.com",
+                "link": "https://bcrm-test.dasi.com/swagger/index.html",
+                "apiRepo": "https://dev.azure.com/diversifiedaeroservicesinc/BCRM/_git/BCRM-Api",
+                "dbRepo": "DB-DASI/BCRM",
+                "status": "Online",
+                "dependency": []
+              },
+              {
+                "name": "Contact",
+                "description": "BCRM - Contact",
+                "platformVersion": "",
+                "version": "1.0.0",
+                "endpoint": "https://bcrm-dev.dasi.com",
+                "link": "https://bcrm-test.dasi.com/swagger/index.html",
+                "apiRepo": "https://dev.azure.com/diversifiedaeroservicesinc/BCRM/_git/BCRM-Api",
+                "dbRepo": "DB-DASI/BCRM",
+                "status": "Online",
+                "dependency": []
+              }
+            ]
+          },
+          {
+            "name": "Tasks"
+          },
+          {
+            "name": "Calls",
+            "value": 1041
+          },
+          {
+            "name": "Contact Request",
+            "value": 5176
+          },
+          {
+            "name": "Territories",
+            "value": 449
+          },
+          {
+            "name": "Sales Leads",
+            "value": 5176
+          },
+          {
+            "name": "Sales Opportunities",
+            "value": 449
+          }
+        ]
+      },
+      {
+        "name": "Channel Share",
+        "type": "Domain",
+        "children": [
+          {
+            "name": "Partner",
+            "value": 1616
+          },
+          {
+            "name": "Catalog (BCAT)",
+            "description": "Price Catalog",
+            "platformVersion": "",
+            "version": "1.0.0",
+            "endpoint": "https://bale-dev.dasi.com",
+            "link": "https://bcat-test.dasi.com/swagger/index.html",
+            "apiRepo": "https://dev.azure.com/diversifiedaeroservicesinc/Blogic-Catalog/_git/Blogic-Catalog-Api",
+            "dbRepo": "DB-DASI/BCAT",
+            "status": "Online",
+            "dependency": [],
+            "children": [
+              {
+                "name": "CS Inventory (BENDER)",
+                "value": 1616
+              },
+              {
+                "name": "Blueberry Real Time Catalog (BREAL)",
+                "value": 1616
+              }
+            ]
+          },
+          {
+            "name": "Inventory Creation",
+            "value": 1027
+          }
+        ]
+      },
+      {
+        "name": "Project Management",
+        "type": "Domain",
+        "children": [
+          {
+            "name": "NA"
+          }
+        ]
+      },
+      {
+        "name": "HR & Workforce Management",
+        "type": "Domain",
+        "children": [
+          {
+            "name": "User / Employee",
+            "value": 1616
+          },
+          {
+            "name": "Training",
+            "value": 1027
+          }
+        ]
+      },
+      {
+        "name": "eCommerce",
+        "type": "Domain",
+        "children": [
+          {
+            "name": "NA"
+          }
+        ]
+      },
+      {
+        "name": "Marketing",
+        "type": "Domain",
+        "children": [
+          {
+            "name": "NA"
+          }
+        ]
+      },
+      {
+        "name": "System",
+        "children": [
+          {
+            "name": "Core Functionality",
+            "children": [
+              {
+                "name": "Authentication (BAUTH)"
+              },
+              {
+                "name": "Authorization (BAUTH)"
+              },
+              {
+                "name": "Log (BLOG)"
+              },
+              {
+                "name": "Email (BCOM)"
+              },
+              {
+                "name": "Notification",
+                "children": [
+                  {
+                    "name": "Admin",
+                    "value": 7074
+                  },
+                  {
+                    "name": "Users",
+                    "children": [
+                      {
+                        "name": "Push"
+                      },
+                      {
+                        "name": "SMS"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Document Management (BDOC)",
+                "children": [
+                  {
+                    "name": "Document Management (BDOC) v1",
+                    "description": "BDOC - Document Management",
+                    "platformVersion": "",
+                    "version": "1.0.0",
+                    "endpoint": "https://extdocapi-dev.dasi.com",
+                    "link": "????",
+                    "apiRepo": "https://dev.azure.com/diversifiedaeroservicesinc/Bdocs/_git/Bdocs-Api",
+                    "dbRepo": "DB-DASI/????",
+                    "status": "Online",
+                    "dependency": [],
+                    "children": []
+                  },
+                  {
+                    "name": "Document Management (BDOC) v2",
+                    "description": "BDOC - Document Management",
+                    "platformVersion": "",
+                    "version": "2.0.0",
+                    "endpoint": "https://bdoc-dev.dasi.com",
+                    "link": "https://bdoc-test.dasi.com/swagger/index.html",
+                    "apiRepo": "https://dev.azure.com/diversifiedaeroservicesinc/Bdocs/_git/BDoc-V2",
+                    "dbRepo": "DB-DASI/BDOC",
+                    "status": "Online",
+                    "dependency": [],
+                    "children": []
+                  },
+                  {
+                    "name": "BLOB Storage (BLOB)",
+                    "value": 7074
+                  },
+                  {
+                    "name": "Upload (BLOAD)",
+                    "children": [
+                      {
+                        "name": "Schedule Agent (BLOB-FILE)",
+                        "children": [
+                          {
+                            "name": "FTP Server",
+                            "children": [
+                              {
+                                "name": "FTP-AAR"
+                              },
+                              {
+                                "name": "FTP-UA"
+                              },
+                              {
+                                "name": "FTP-JMW"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Navigation & Routing"
+              }
+            ]
+          },
+          {
+            "name": "Core Features",
+            "children": [
+              {
+                "name": "Security Controls (ACL) (BOVER)"
+              },
+              {
+                "name": "Communications (BCOM)"
+              },
+              {
+                "name": "Display (BISPLAY)"
+              },
+              {
+                "name": "Exclusion"
+              },
+              {
+                "name": "Flow (BLOW)",
+                "description": "Workflow",
+                "platformVersion": "",
+                "version": "2.0.0",
+                "endpoint": "https://blow-dev.dasi.com",
+                "link": "https://blow-test.dasi.com/swagger/index.htmlhttps://blow-test.dasi.com/swagger/index.html",
+                "apiRepo": "https://dev.azure.com/diversifiedaeroservicesinc/Blow/_git/Blow-Api",
+                "dbRepo": "DB-DASI/BLOW",
+                "status": "Offline",
+                "dependency": [],
+                "children": []
+              },
+              {
+                "name": "Login"
+              },
+              {
+                "name": "Notes (BNOTE)"
+              },
+              {
+                "name": "Ship via Packages"
+              },
+              {
+                "name": "Status"
+              },
+              {
+                "name": "Terms"
+              },
+              {
+                "name": "Trace"
+              },
+              {
+                "name": "Type"
+              }
+            ]
+          },
+          {
+            "name": "Core Modules",
+            "children": [
+              {
+                "name": "Company",
+                "value": 3938,
+                "children": [
+                  {
+                    "name": "Company Site",
+                    "value": 3938
+                  }
+                ]
+              },
+              {
+                "name": "Contact Roles"
+              },
+              {
+                "name": "Contact Group"
+              },
+              {
+                "name": "Guest Users"
+              },
+              {
+                "name": "Customer Users"
+              },
+              {
+                "name": "Users Consent"
+              },
+              {
+                "name": "Wiki"
+              },
+              {
+                "name": "Trainer"
+              },
+              {
+                "name": "Validation"
+              }
+            ]
+          },
+          {
+            "name": "Integrations",
+            "children": [
+              {
+                "name": "External RFQs (BEXRFC)",
+                "value": 16540,
+                "children": [
+                  {
+                    "name": "Aeroxchange (EXT-AEX)",
+                    "value": 8258
+                  },
+                  {
+                    "name": "ILSMart (EXT-AEX)",
+                    "value": 22026
+                  },
+                  {
+                    "name": "Partsbase (EXT-PB)",
+                    "value": 22026
+                  },
+                  {
+                    "name": "Webstore (EXT-WEB)",
+                    "value": 22026
+                  }
+                ]
+              },
+              {
+                "name": "External Parts Catalog Upload (BEXPCU)",
+                "value": 16540,
+                "children": [
+                  {
+                    "name": "Aeroxchange (EXT-AEX)",
+                    "value": 8258
+                  },
+                  {
+                    "name": "ILSMart (EXT-AEX)",
+                    "value": 22026
+                  },
+                  {
+                    "name": "Partsbase (EXT-PB)",
+                    "value": 22026
+                  },
+                  {
+                    "name": "Webstore (EXT-WEB)",
+                    "value": 22026
+                  },
+                  {
+                    "name": "BLOB Storage (BLOB)",
+                    "value": 22026
+                  }
+                ]
+              },
+              {
+                "name": "Blueberry Real Time Catalog (BEXRTC)",
+                "value": 16540,
+                "children": [
+                  {
+                    "name": "Aeroxchange (EXT-AEX)",
+                    "value": 8258
+                  },
+                  {
+                    "name": "Lufthansa (EXT-LUTH)",
+                    "value": 22026
+                  }
+                ]
+              },
+              {
+                "name": "Ship Engine",
+                "value": 16540
+              },
+              {
+                "name": "Mail Inbound (BAILIN)",
+                "description": "Inbound Email",
+                "platformVersion": "v2",
+                "version": "1.0.0",
+                "endpoint": "https://mailin-dev.dasi.com/",
+                "link": "https://mailin-dev.dasi.com/swagger/index.html",
+                "apiRepo": "https://dev.azure.com/diversifiedaeroservicesinc/_git/Bailin",
+                "dbRepo": "DB-DASI/BAILIN",
+                "status": "Online",
+                "dependency": [],
+                "children": [
+                  {
+                    "name": "Outlook Mailbox (EXT-OUTLOOK)",
+                    "description": "External Microservice Integration - MS Outlook",
+                    "status": "Online",
+                    "endpoint": "https://api-test.dasi.com/outlook/",
+                    "link": "https://api-test.dasi.com/outlook/swagger/index.html",
+                    "apiRepo":"https://dev.azure.com/diversifiedaeroservicesinc/ExternalWebAPI/_git/ExternalWebApi-Outlook",
+                    "dbRepo": "",
+                    "type": "API",
+                    "platformVersion": "v2",
+                    "version": "1.0.0",
+                    "dependency": []
+                  }
+                ]
+              },
+              {
+                "name": "Mail OutBound (BAILOUT)",
+                "status": "Offline",
+                "value": 16540,
+                "children": [
+                  {
+                    "name": "Outlook Mailbox (EXT-OUTLOOK)",
+                    "value": 8258
+                  },
+                  {
+                    "name": "Amazon AWS (EXT-AWSSES)",
+                    "value": 22026
+                  },
+                  {
+                    "name": "Azure Send Grid (EXT-AZSG)",
+                    "value": 22026
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Automations",
+            "children": [
+              {
+                "name": "Invoice Billing",
+                "value": 16540
+              },
+              {
+                "name": "Auto Quote (BQUEUE)",
+                "value": 16540,
+                "children": [
+                  {
+                    "name": "Request For Quote (BRFQ) -> Customer Quote (BQUOTE)",
+                    "value": 8258
+                  }
+                ]
+              },
+              {
+                "name": "Auto RFQ",
+                "description": "Auto-GetRFQs",
+                "platformVersion": "v2",
+                "version": "1.0.0",
+                "endpoint": "https://mailin-dev.dasi.com/",
+                "link": "https://bauto-test.dasi.com/getrfqs/swagger/index.html",
+                "apiRepo": "https://dev.azure.com/diversifiedaeroservicesinc/BAuto/_git/Auto-GetRFQs",
+                "dbRepo": "DB-DASI/BAUTO",
+                "status": "Online",
+                "dependency": [],
+                "children": [
+                  {
+                    "name": "External RFQs (BEXRFQ) -> Request For Quote (BRFQ)",
+                    "description": "Auto-Get External RFQs",
+                    "platformVersion": "v2",
+                    "version": "1.0.0",
+                    "endpoint": "https://mailin-dev.dasi.com/",
+                    "link": "https://bauto-test.dasi.com/getexternalrfqs/swagger/index.html",
+                    "apiRepo": "https://dev.azure.com/diversifiedaeroservicesinc/BAuto/_git/Auto-GetExternalRfqs",
+                    "dbRepo": "DB-DASI/BAUTO",
+                    "status": "Online",
+                    "dependency": []
+                  }
+                ]
+              },
+              {
+                "name": "Auto Email to RFQ",
+                "value": 16540,
+                "children": [
+                  {
+                    "name": "Mail Inbound (BAILIN) -> Request For Quote (BRFQ)",
+                    "value": 8258
+                  }
+                ]
+              },
+              {
+                "name": "Auto Queue",
+                "value": 16540,
+                "children": [
+                  {
+                    "name": "Customer Quote (BQUOTE) -> Message Queue (BQUEUE)",
+                    "value": 8258
+                  },
+                  {
+                    "name": "BluePrint SSRS Template -> Message Queue (BQUEUE)",
+                    "value": 8258
+                  }
+                ]
+              },
+              {
+                "name": "Auto Email",
+                "value": 16540,
+                "children": [
+                  {
+                    "name": "Message Queue (BQUEUE) -> Mail Outbound (BAILOUT)",
+                    "value": 8258
+                  }
+                ]
+              },
+              {
+                "name": "Auto RFQ Push",
+                "value": 16540,
+                "children": [
+                  {
+                    "name": "Message Queue (BQUEUE) -> External RFQs (BEXRFQ)",
+                    "value": 8258
+                  }
+                ]
+              },
+              {
+                "name": "Inventory Creation",
+                "value": 8258
+              },
+              {
+                "name": "Customer Statement Delivery",
+                "value": 22026
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
+]
